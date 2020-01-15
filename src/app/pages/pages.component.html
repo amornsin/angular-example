@@ -1,0 +1,24 @@
+<br>
+
+str1 : {{ msg }}
+
+<br>
+
+<span [innerHtml]='fnSize' [style.font-size]='str2'>asd</span>
+<br>
+
+<input type="text" [(ngModel)] = 'myMsg'>
+<button (click)='onClickReset()'>reset</button>
+<br>
+{{myMsg}}
+
+<br>
+<br>
+
+<table>
+    <tr *ngFor="let page of pages">
+        <td>{{ page.id }}</td>
+        <td>{{ page.name }}</td>
+        <td>{{ page.roomNo }}</td>
+    </tr>
+</table>
